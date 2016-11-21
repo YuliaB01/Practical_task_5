@@ -1,0 +1,153 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Rochester', cursive;
+}
+
+.wrapper {
+	min-height: 100%;
+	background: #FDF3FA;
+}
+
+.wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+	font-family: 'Pinyon Script', cursive;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+	height: 85px;
+	padding-top: 15px;
+	background-image: linear-gradient(to bottom, #ffffff 0%, #FF0000 300%);
+}
+
+.menu {
+	text-align: center;
+	background: #A5909D;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.menu_list {
+	list-style: none;
+	margin: 0;
+	font-size: 0;
+}
+
+.list_item {
+	display: inline-block;
+	font-size: 25px;
+	position: relative;
+}
+
+.link {
+	padding: 10px 15px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #A5909D;
+	color: white;
+	transition: background linear .3s;
+}
+
+.link:hover {
+	background: #D4C9D0;
+}
+
+.hover_list {
+	display: none;
+	position: absolute;
+	left: -40%;
+	text-align: left;
+}
+
+.list_item:hover .hover_list {
+	display: block;
+}
+
+.hover_list .link {
+	width: 150px;
+	border-bottom: 1px solid #E7E3E6;
+	transition: background linear .3s;
+}
+
+.sidebar {
+	background: #F6E1F4;
+	box-sizing: border-box;
+	width: 300px;
+	margin: 10px 10px 0 10px;
+	float: left;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.sidebar p {
+	margin: 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.side_link {
+	text-decoration: none;
+	color: #201E20;
+}
+
+.side_link:hover {
+	text-decoration: underline;
+}
+
+.content {
+	background: #F9E7F7;
+	box-sizing: border-box;
+	font-size: 20px;
+	margin: 10px 10px 0 330px;
+	padding: 10px 15px 100px 10px;
+}
+
+.content h3 {
+	margin-top: 0;
+} 
+
+.content p {
+	text-indent: 20px;
+	overflow: auto
+}
+
+.content img {
+	float: left;
+	margin: 7px 10px 7px 7px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	border-radius: 10px;
+}
+
+button {
+	background-color: #D0C1CE;
+	color: #3E393D;
+	border: 1px solid #DDD3DC;
+	border-radius: 10px;
+	transition: background linear .3s;
+	cursor: pointer;
+}
+
+button:hover {
+ 	background: #BBADB9;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5)
+}
+
+.footer {
+	background: #453E43;
+	height: 100px;
+	margin-top: -100px;
+	text-align: center;
+	clear: both;
+}
+
+.footer p {
+	margin: 0;
+	padding-top: 30px;
+	color: #FDF8FC;
+	font-size: 18px;
+}
